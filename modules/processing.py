@@ -200,6 +200,9 @@ class StableDiffusionProcessing:
     sd_vae_name: str = field(default=None, init=False)
     sd_vae_hash: str = field(default=None, init=False)
 
+    # task_id: str = field(default=None, init=False)
+    
+
     is_api: bool = field(default=False, init=False)
 
     def __post_init__(self):
@@ -1093,7 +1096,6 @@ class StableDiffusionProcessingTxt2Img(StableDiffusionProcessing):
                 self.truncate_x = (self.hr_upscale_to_x - target_w) // opt_f
                 self.truncate_y = (self.hr_upscale_to_y - target_h) // opt_f
 
-        self.task_id = task_id
 
     def init(self, all_prompts, all_seeds, all_subseeds):
         if self.enable_hr:
