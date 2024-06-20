@@ -201,6 +201,7 @@ class StableDiffusionProcessing:
     sd_vae_hash: str = field(default=None, init=False)
 
     is_api: bool = field(default=False, init=False)
+    task_id: str = field(default=None, init=False)
 
     def __post_init__(self):
         if self.sampler_index is not None:
@@ -239,6 +240,13 @@ class StableDiffusionProcessing:
 
     @sd_model.setter
     def sd_model(self, value):
+        pass
+    @property
+    def task_id(self):
+        return self.task_id
+
+    @task_id.setter
+    def task_id(self, value):
         pass
 
     @property

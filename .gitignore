@@ -37,3 +37,12 @@ notification.mp3
 /node_modules
 /package-lock.json
 /.coverage*
+cache/hashes/cache.db
+cache/hashes/cache.db-shm
+cache/hashes/cache.db-wal
+cache/hashes-addnet/cache.db
+cache/hashes-addnet/cache.db-shm
+cache/hashes-addnet/cache.db-wal
+cache/safetensors-metadata/cache.db
+cache/safetensors-metadata/cache.db-shm
+cache/safetensors-metadata/cache.db-wal

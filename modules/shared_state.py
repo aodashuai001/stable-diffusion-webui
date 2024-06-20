@@ -26,8 +26,10 @@ class State:
     textinfo = None
     time_start = None
     server_start = None
+    task_id = ""
     _server_command_signal = threading.Event()
     _server_command: Optional[str] = None
+    
 
     def __init__(self):
         self.server_start = time.time()
