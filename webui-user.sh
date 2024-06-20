@@ -11,6 +11,7 @@
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
 #export COMMANDLINE_ARGS=""
+export COMMANDLINE_ARGS="--xformers --no-half --no-half-vae --disable-nan-check --listen --nowebui --profiles prod"
 
 # python3 executable
 #python_cmd="python3"
