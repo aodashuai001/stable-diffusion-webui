@@ -3,6 +3,6 @@
 set PYTHON=
 set GIT=
 set VENV_DIR=
-set COMMANDLINE_ARGS=
+set COMMANDLINE_ARGS=--opt-sdp-attention --disable-nan-check --api-log --disable-nan-check --listen --profiles dev
 
 call webui.bat
